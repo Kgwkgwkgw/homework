@@ -13,7 +13,7 @@ public class EstimateRequest {
     @NotNull
     private CurrencyType currency;
     @NotNull
-    private Long destination;
+    private String destination;
     @NotNull
     private Long userId;
 }

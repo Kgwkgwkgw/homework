@@ -1,7 +1,6 @@
 package homework.payment.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
@@ -15,8 +14,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class Merchant {
     @Id
-    @GeneratedValue
-    private Long id;
+    private String id;
     private String name;
     private LocalDateTime createdAt;
 }

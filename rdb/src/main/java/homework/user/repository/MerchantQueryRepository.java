@@ -14,7 +14,7 @@ import static homework.payment.entity.QMerchantFee.merchantFee;
 public class MerchantQueryRepository {
     private final JPAQueryFactory jpaQueryFactory;
 
-    public MerchantFeeDto findMerchantFeeDtoByMerchantIdAndCurrency(Long merchantId, CurrencyType currency) {
+    public MerchantFeeDto findMerchantFeeDtoByMerchantIdAndCurrency(String merchantId, CurrencyType currency) {
         return this.jpaQueryFactory
                 .select(Projections.fields(MerchantFeeDto.class, merchantFee.fees))
                 .from(merchantFee)

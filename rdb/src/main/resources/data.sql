@@ -5,8 +5,8 @@ INSERT INTO account (id, user_id, balance, currency, account_number, created_at)
 INSERT INTO account (id, user_id, balance, currency, account_number, created_at) VALUES (2, 2, 2.555, 'USD', '2201-2222-222', now());
 
 
-INSERT INTO merchant (id, name, created_at) VALUES (1, '스타벅스 부평삼거리점', now());
-INSERT INTO merchant (id, name, created_at) VALUES (2, '스타벅스 판교', now());
+INSERT INTO merchant (id, name, created_at) VALUES ('STARBUCKS_BS', '스타벅스 부평삼거리점', now());
+INSERT INTO merchant (id, name, created_at) VALUES ('STARBUCKS_PANGYO', '스타벅스 판교', now());
 
 INSERT INTO merchant_fee (id, merchant_id, currency, fee, created_at) VALUES (1, 1, 'KRW', 100, now());
 INSERT INTO merchant_fee (id, merchant_id, currency, fee, created_at) VALUES (2, 1, 'USD', 200.5, now());
