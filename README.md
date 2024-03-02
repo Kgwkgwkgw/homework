@@ -43,7 +43,7 @@
 | id          | bigint        | O     | PK, Auto Increment |
 | merchant_id | bigint        | O     | IDX, 상점 id
 | currency    | varchar(20)   | O     | 결제 수수료의 통화
-| fee         | decimal        | O     | 결제 수수료
+| fees        | decimal        | O     | 결제 수수료
 | created_at  | datetime      | O     | 생성 시간
 
 <br>

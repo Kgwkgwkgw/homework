@@ -2,6 +2,7 @@ package homework.user.repository;
 
 import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.impl.JPAQueryFactory;
+import homework.user.entity.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 import homework.user.dto.UserWithAccountDto;
@@ -22,5 +23,11 @@ public class UserQueryRepository {
                 .from(user)
                 .leftJoin(user.account)
                 .where(user.id.eq(userId)).fetchOne();
+    }
+
+    public User findUserWithAccountUserId(Long userId) {
+        return this.jpaQueryFactory.selectFrom(user)
+                .innerJoin(user.account)
+                .fetchJoin().where(user.id.eq(userId)).fetchOne();
     }
 }
