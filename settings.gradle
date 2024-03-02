@@ -1,1 +1,5 @@
 rootProject.name = 'homework'
+include 'rdb'
+include 'common'
+include 'api'
+
