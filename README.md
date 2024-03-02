@@ -20,7 +20,7 @@
 | 컬럼             | 데이터 타입         | 필수 여부 | 설명                 |
 |----------------|----------------|-------|--------------------|
 | id             | bigint         | O     | PK, Auto Increment |
-| user_id        | bigint         | O     | IDX, 회원의 id
+| user_id        | bigint         | O     | UK, 회원의 id
 | balance        | decimal(38, 5) | O     | 잔고, 소수점있는 통화도 있으므로 정확하게 저장하기 위해 decimal을 사용
 | currency       | varchar(20)    | O     | 통화 타입
 | account_number | varchar(30)    | O     | UK, 계좌 번호로 유저에게 노출 됌, 클러스터 인덱스를 기준으로 정렬되므로 해당 컬럼을 pk로 잡지 않고 uk로 사용
