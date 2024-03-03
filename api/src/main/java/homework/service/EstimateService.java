@@ -8,6 +8,7 @@ import homework.user.repository.MerchantQueryRepository;
 import homework.user.repository.UserQueryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 
@@ -17,6 +18,7 @@ public class EstimateService {
     private final UserQueryRepository userQueryRepository;
     private final MerchantQueryRepository merchantQueryRepository;
 
+    @Transactional(readOnly = true)
     public EstimateResponse estimate(EstimateRequest estimateRequest) {
         User foundUser = this.userQueryRepository.findUserWithAccountUserId(estimateRequest.getUserId());
         MerchantFeeDto feeDto = this.merchantQueryRepository.findMerchantFeeDtoByMerchantIdAndCurrency(estimateRequest.getDestination(), estimateRequest.getCurrency());
