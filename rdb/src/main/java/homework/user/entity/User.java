@@ -2,7 +2,6 @@ package homework.user.entity;
 
 
 import homework.enums.CurrencyType;
-import homework.payment.dto.MerchantFeeDto;
 import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.Getter;

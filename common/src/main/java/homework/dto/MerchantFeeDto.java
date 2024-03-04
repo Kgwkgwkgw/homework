@@ -1,4 +1,4 @@
-package homework.payment.dto;
+package homework.dto;
 
 import lombok.Getter;
 

@@ -2,7 +2,7 @@ package homework.payment.service;
 
 import homework.dto.EstimateRequest;
 import homework.dto.EstimateResponse;
-import homework.payment.dto.MerchantFeeDto;
+import homework.dto.MerchantFeeDto;
 import homework.user.entity.User;
 import homework.payment.repository.MerchantQueryRepository;
 import homework.user.repository.UserQueryRepository;

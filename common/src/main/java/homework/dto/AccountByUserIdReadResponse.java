@@ -2,7 +2,6 @@ package homework.dto;
 
 
 import homework.enums.CurrencyType;
-import homework.user.dto.UserWithAccountDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

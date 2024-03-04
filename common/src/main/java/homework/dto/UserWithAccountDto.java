@@ -1,4 +1,4 @@
-package homework.user.dto;
+package homework.dto;
 
 import homework.enums.CurrencyType;
 import lombok.Getter;
